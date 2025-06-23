@@ -227,7 +227,7 @@
           <div class="mx-auto max-w-xs sm:max-w-xl md:max-w-4xl px-4 sm:px-6 slick">
               @foreach($certificates as $certificate)
                   <div class="group hover:!grayscale-0 hover:duration-1000 bg-white shadow-lg rounded-lg overflow-hidden mx-2 my-8">
-                      <a href="{{ $certificate->link }}" target="_blank">
+                      <a href="{{ asset('storage/' . $certificate->file) }}" target="_blank">
                         <embed src="{{ asset('storage/' . $certificate->file) }}" type="application/pdf" width="100%" height="100">
                       </a>
                       <div class="p-4">
